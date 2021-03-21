@@ -1,9 +1,11 @@
 import React from 'react'
-
+import { NavBar, NavItem } from './components/Common/index'
 const App: React.FC = (): JSX.Element => {
     return (
         <div>
-            Hello
+           <NavBar>
+                <NavItem width={60} title="About"/>
+            </NavBar>
         </div>
     )
 }
