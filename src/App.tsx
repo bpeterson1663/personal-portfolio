@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import { NavBar, NavItem } from './components/Common/index'
-import { About } from './components/Pages/index'
+import { About, Home } from './components/Pages/index'
 
 const App: React.FC = (): JSX.Element => {
   return (
@@ -14,6 +14,7 @@ const App: React.FC = (): JSX.Element => {
       </NavBar>
       <Switch>
         <Route path="/about" component={About} />
+        <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   )
