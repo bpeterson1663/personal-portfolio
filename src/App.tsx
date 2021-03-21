@@ -1,12 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import { NavBar, NavItem } from './components/Common/index'
+import { About } from './components/Pages/index'
+
 const App: React.FC = (): JSX.Element => {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar>
-        <NavItem width={60} title="About" />
+        <Link to="/about" style={{ textDecoration: 'none' }}>
+          <NavItem width={60} title="About" />
+        </Link>
       </NavBar>
-    </div>
+      <Switch>
+        <Route path="/about" component={About} />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
