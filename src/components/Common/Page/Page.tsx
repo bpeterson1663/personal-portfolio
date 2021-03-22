@@ -9,8 +9,10 @@ export const Page: React.FC<PageT> = ({ title, children }): JSX.Element => {
 
   return (
     <div className={classes.container}>
-      <h1>{title}</h1>
-      {children}
+      <div className={classes.header}>
+        <h1>{title}</h1>
+      </div>
+      <div className={classes.subContainer}>{children}</div>
     </div>
   )
 }
