@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import { NavBar, NavItem } from './components/Common/index'
-import { About, Home , Projects, Experience, Contact} from './components/Pages/index'
+import { About, Home, Projects, Experience, Contact } from './components/Pages/index'
 
 const App: React.FC = (): JSX.Element => {
   return (

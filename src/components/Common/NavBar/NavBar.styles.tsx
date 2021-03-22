@@ -13,7 +13,7 @@ export const useStyles = createUseStyles({
     width: '90%',
     flexDirection: 'row-reverse',
     display: 'flex',
-    padding: '0 10px'
+    padding: '0 10px',
   },
   iconContainer: {
     width: '10%',
