@@ -10,7 +10,7 @@ export const NavBar: React.FC = ({ children }): JSX.Element => {
     <div className={classes.contaienr}>
       <div className={classes.iconContainer}>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <NavItem width={50}>
+          <NavItem>
             <FaHome />
           </NavItem>
         </Link>
